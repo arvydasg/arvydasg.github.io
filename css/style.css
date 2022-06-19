@@ -1,0 +1,548 @@
+/* Code theme taken from Modus Operandi Emacs theme created by Protesilaos Stavrou.
+ * CSS generated using `org-html-htmlize-generate-css'
+ */
+
+:root {
+    --color-background: white;
+    --color-text: #333333;;
+    --color-secondary: #333;
+    --color-shadow: #eee;
+    --color-link: #0074CC;
+    /* --color-link: #5599D9; */
+    --color-link-active: #0a95ff;
+    --border-width: 2px;
+}
+
+body {
+    font-size: 110%;
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 59rem;
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+.nav li {
+    padding-right: 20px;
+    display: inline;
+}
+
+p {
+    font-family: serif;
+    line-height: 150%;
+}
+
+#content > * {
+    grid-column: 2;
+}
+
+#content {
+    max-width: 54rem;
+    margin: auto;
+    padding-top: 2.8em;
+}
+
+#postamble {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    max-width: 54rem;
+    margin: auto;
+    font-size: 80%;
+    color: grey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+/* .title { */
+/*     font-family: monospace; */
+/*     font-size: 2.8em; */
+/*     text-align: left; */
+/*     border-bottom: dotted; */
+/*     padding-bottom: 10px; */
+/* } */
+
+h2 {
+    color: #587e72;
+    border-bottom: 1px solid #ddd;
+    margin-top: 1.5em;
+    padding-bottom: 8px;
+    border-bottom: 4px solid #587e72;
+}
+
+h2:first-letter{
+    text-transform: uppercase;
+}
+
+.outline-text-2 {
+    margin-left: 60px;
+}
+
+h3 {
+    color: #587e72;
+    margin-left: 25px;
+    border-bottom: 1px solid #587e72;
+}
+
+.outline-text-3 {
+    margin-left: 60px;
+}
+
+h3:first-letter{
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #587e72;
+    margin-left: 50px;
+    border-bottom: 1px solid #587e72;
+}
+
+.outline-text-4 {
+    margin-left: 60px;
+}
+
+h4:first-letter{
+    text-transform: uppercase;
+}
+
+
+
+/* .title:before { */
+/*     content: "»"; */
+/*     padding-right: 10px; */
+/* } */
+
+/* h2 { */
+/*     /\* color: red; *\/ */
+/*     padding-left: 20px; */
+/* } */
+
+/* h2:before { */
+/*     content: "»»"; */
+/*     padding-right: 10px; */
+/* } */
+
+/* h3 { */
+/*     /\* color: orange; *\/ */
+/*     padding-left: 40px; */
+/* } */
+
+/* h3:before { */
+/*     content: "»»»"; */
+/*     padding-right: 10px; */
+/* } */
+
+a:link, a:visited {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: var(--color-link-active);
+    text-decoration: underline;
+}
+
+li {
+    padding-bottom: 0.3em;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: var(--border-width) solid var(--color-text);
+    box-shadow: 4px 4px 6px var(--color-shadow);
+}
+
+th {
+    color: var(--color-background);
+    background-color: var(--color-text);
+    border: 1px solid var(--color-background);
+    padding: 0.25em;
+}
+
+td {
+    border: 1px solid var(--color-text);
+    padding: 0.25em;
+}
+
+pre {
+    overflow: auto;
+    scrollbar-color: grey lightgrey;
+    scrollbar-width: thin;
+    border: var(--border-width) solid var(--color-text);
+    box-shadow: 4px 4px 6px var(--color-shadow);
+    padding: 1em;
+}
+
+kbd {
+    background-color: var(--color-shadow);
+    border-radius: 3px;
+    border: 1px solid var(--color-secodnary);
+    color: var(--color-text);
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+.todo	{ font-family: monospace; color: red; }
+.done	{ font-family: monospace; color: green; }
+
+.tag {
+    background-color: #eee;
+    font-family: monospace;
+    padding: 2px;
+    font-size: 80%;
+    font-weight: normal;
+}
+
+.timestamp {
+    font-family: monospace;
+    color: var(--color-secondary);
+}
+
+/* If in heading display above */
+h1 .timestamp, h2 .timestamp, h3 .timestamp, h4 .timestamp, h5 .timestamp, h6 .timestamp {
+    display: block;
+}
+
+.published {
+    font-size: 1.3em;
+    font-family: monospace;
+    color: var(--color-secondary);
+}
+
+.footdef {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.footpara {
+    display: inline;
+}
+
+footer {
+    margin: auto;
+    font-size: 80%;
+    line-height: 1.5em;
+}
+
+#updated {
+    font-size: 90%;
+    font-family: monospace;
+    color: var(--color-secondary);
+    padding: 1.5em 1em 0.75em;
+    border-bottom: 1px dotted var(--color-secondary);
+    float: right;
+}
+
+/* #preamble { */
+/*     display: flex; */
+/*     justify-content: space-between; */
+/* } */
+
+.info {
+    border: 1px solid;
+    background: url('info.png') no-repeat 10px 10px #BDE5F8;
+    color: #00529B;
+    padding: 4px 10px 4px 52px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 10px 0px;
+}
+
+.fixme {
+    background: #FFFF88 url('fixme.png') no-repeat top left;
+    color: #CC0000;
+    display: inline-block;
+    height: 16px;
+    text-indent: -9999px;
+    width: 82px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* nav stuff from here:
+
+https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/
+
+does the job for now.
+ */
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #587e72;
+    color: #fff;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+/* LOGO */
+.logo {
+    font-size: 32px;
+    text-decoration: none;
+}
+
+a.logo {
+    color: white;
+    text-decoration: none;
+}
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    list-style-type: none;
+}
+.menu li:hover {
+    background-color: #3e5850;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+    position: relative; 
+}
+.dropdown {
+    background-color: #3e5850;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 30px;
+}
+.dropdown li + li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+.dropdown li {
+    list-style-type: none;
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+.dropdown li:hover {
+    background-color: #587e72;
+}
+.services:hover .dropdown {
+    display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color: #587e72;
+        right: 19px;
+        left: 19px;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #587e72;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+        list-style-type: none;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translate(40px, -30px);
+        text-decoration: none;
+    }
+    .dropdown li:hover {
+        background-color: #587e72;
+    }
+
+    #table-of-contents {
+	position: fixed;
+	margin-top: 105px;
+	float: right;
+	border: 1px solid #red;
+	max-width: 50%;
+	overflow: auto;
+    }
+}
+
+/* /\* tables *\/ */
+
+/* table colgroup col:nth-child(1) { */
+/*     width: 50%; */
+/* } */
+/* table colgroup col:nth-child(2) { */
+/*     width: 20%; */
+/* } */
+/* table colgroup col:nth-child(3) { */
+/*     width: 10%; */
+/* } */
+/* table colgroup col:nth-child(4) { */
+/*     width: 20%; */
+/* } */
+
+/* code with ~tt~ and =tt= */
+
+code {
+    background-color: #F8F8FF;
+    border: 1px solid #DEDEDE;
+    color: #444444;
+    font-family: monospace;
+    /* font-size: 0.93em; */
+    margin: 0px 1px;
+    padding: 0px 2px;
+} 
+
+/* TOC inspired by http://jashkenas.github.com/coffee-script */
+#table-of-contents {
+    z-index: 1;
+    margin-top: 105px;
+    font-size: 10pt;
+    font-family:sans-serif;
+    position: fixed;
+    right: 0em;
+    top: 0em;
+    background: white;
+    line-height: 12pt;
+    text-align: right;
+    box-shadow: 0 0 1em #777777;
+    -webkit-box-shadow: 0 0 1em #777777;
+    -moz-box-shadow: 0 0 1em #777777;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    /* ensure doesn't flow off the screen when expanded */
+    max-height: 80%;
+    overflow: auto; }
+#table-of-contents h2 {
+    font-size: 13pt;
+    max-width: 9em;
+    border: 0;
+    font-weight: normal;
+    margin-top: 0.75em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.05em;
+    padding-bottom: 0.05em; }
+#table-of-contents #text-table-of-contents {
+    display: none;
+    text-align: left; }
+#table-of-contents:hover #text-table-of-contents {
+    display: block;
+    padding: 0.5em;
+    margin-top: -1.5em; }
+
+/* 
+table of contents version 2 from
+https://olmon.gitlab.io/org-themes/darksun/darksun.html#outline-container-org6e142a0
+*/
+
+/* #table-of-contents { */
+/*     display: table; */
+/*     float: right; */
+/* } */
+/* #table-of-contents h2 { */
+/*     /\* display: none; *\/ */
+/* } */
+
+/* #table-of-contents li { */
+/*     /\* list-style-type: none; *\/ */
+/* } */
+
+/* #table-of-contents a:hover { */
+/*     text-decoration: underline; */
+/* } */
+
+/* #table-of-contents { */
+/*     background-color: orange !important; */
+/*     pposition: fixed; */
+/*     top: 0px; */
+/*     right: -5px; */
+/*     padding: 0.5em; */
+/*     /\* z-index: 200; *\/ */
+/*     width: 20%; */
+/*     word-wrap: normal; */
+/*     overflow: hidden; */
+/* } */
+
+/* #table-of-contents ul { */
+/*     margin: 0.5em; */
+/*     padding-left: 1em; */
+/* } */
+
+/* #table-of-contents h2 { */
+/*     margin-top: 0; */
+/*     margin-bottom: 0; */
+/*     font-size: 110%; */
+/* } */
+
+/* #table-of-contents a { */
+/*     display: block; */
+/*     font-family: sans-serif; */
+/*     text-decoration: none; */
+/* } */
+
+/* #table-of-contents a:hover { */
+/*     text-decoration: underline; */
+/* } */
+
+/* /\* #table-of-contents a { *\/ */
+/* /\*   display: none; *\/ */
+/* /\* } *\/ */
+/* #table-of-contents:hover a { */
+/*     display: block; */
+/* } */
+
+/* table of contents version 2 ends here */
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  /* display: inline; */
+}
