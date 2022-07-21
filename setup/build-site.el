@@ -59,6 +59,7 @@
                 <label for='checkbox_toggle' class='hamburger'>&#9776;</label>
                 <!-- NAVIGATION MENUS -->
                 <div class='menu'>
+                    <li><a href='20220621220229-ossu.html'>Ossu</a></li>
                     <li><a href='20220619101553-blog.html'>Blog</a></li>
                     <li><a href='20220619101641-blog_projects.html'>Projects</a></li>
                 </div>
