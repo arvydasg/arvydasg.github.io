@@ -51,7 +51,7 @@
          :html-preamble
          "<nav class='navbar'>
           <!-- LOGO -->
-            <a class='logo' href='sitemap.html'>Arvydasg</a>
+            <a class='logo' href='index.html'>Arvga</a>
             <!-- NAVIGATION MENU -->
             <ul class='nav-links'>
                 <!-- USING CHECKBOX HACK -->
