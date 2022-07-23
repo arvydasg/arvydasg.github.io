@@ -233,6 +233,19 @@ h1 .timestamp, h2 .timestamp, h3 .timestamp, h4 .timestamp, h5 .timestamp, h6 .t
     line-height: 1.5em;
 }
 
+.footer a:link, a:visited {
+    color: var(--color-link);
+    /* text-decoration: none; */
+    font-weight: 600;
+}
+
+.footer a:hover, a:active {
+    color: var(--color-link-active);
+    background-color: rgb(199, 146, 233);
+    color: black;
+    font-weight: 600;
+}
+
 #updated {
     font-size: 90%;
     font-family: monospace;
