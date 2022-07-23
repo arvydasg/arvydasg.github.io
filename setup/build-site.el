@@ -36,7 +36,7 @@
          :recursive t
          :with-author nil           ;; Don't include author name
          :with-creator t            ;; Include Emacs and Org versions in footer
-         :with-toc t                ;; Include a table of contents
+         :with-toc nil                ;; Include a table of contents
          :with-title nil
          ;; :section-numbers 2       ;; include only first two section numbers
          :section-numbers nil       ;; Don't include section numbers
@@ -73,19 +73,22 @@
              Built with %c.
          </div>")
 
-        ("static"
-         :base-directory "~/Dropbox/documents/org/images_nejudink/website_nejudink"
-         :base-extension "jpg\\|gif\\|png\\|pdf\\|xlsx\\|txt"
-         :publishing-directory "~/Dropbox/src/arvydasg.github.io/static"
-         :publishing-function org-publish-attachment
-         :recursive t)
+        ;; jeigu nori, kad sugeneruotu images folderi - uncomment this
+        ;; as pasirinkau tiesiogiai kelti images i arvydas.github.io folderiuka, kad displayintu narsykleje
+        ;; ("static"
+        ;;  :base-directory "~/Dropbox/documents/org/images_nejudink/website_nejudink"
+        ;;  :base-extension "jpg\\|gif\\|png\\|pdf\\|xlsx\\|txt"
+        ;;  :publishing-directory "~/Dropbox/src/arvydasg.github.io/static"
+        ;;  :publishing-function org-publish-attachment
+        ;;  :recursive t)
+        ;; pridek "static" to components jeigu uncommentinsi static
         ("css"
          :base-directory "./css"
          :base-extension "css"
          :publishing-directory "~/Dropbox/src/arvydasg.github.io/css"
          :publishing-function org-publish-attachment
          :recursive t)
-        ("all" :components ("org" "static" "css"))))
+        ("all" :components ("org" "css"))))
 
 (setq org-export-with-broken-links 'mark)
 

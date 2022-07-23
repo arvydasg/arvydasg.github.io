@@ -562,3 +562,7 @@ blockquote:before {
 blockquote p {
   /* display: inline; */
 }
+
+.org-ul {
+    padding: 0px;
+}
