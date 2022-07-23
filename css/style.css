@@ -136,7 +136,8 @@ h4:first-letter{
 
 #content a:link, a:visited {
     color: var(--color-link);
-    text-decoration: none;
+    /* text-decoration: none; */
+    font-weight: 600;
 }
 
 #content a:hover, a:active {
@@ -170,11 +171,12 @@ td {
 }
 
 pre {
+    background-color: rgb(36, 40, 55);
     overflow: auto;
-    scrollbar-color: grey lightgrey;
-    scrollbar-width: thin;
-    border: var(--border-width) solid var(--color-text);
-    box-shadow: 4px 4px 6px var(--color-shadow);
+    /* scrollbar-color: grey lightgrey; */
+    /* scrollbar-width: thin; */
+    /* border: var(--border-width) solid var(--color-text); */
+    /* box-shadow: 4px 4px 6px var(--color-shadow); */
     padding: 1em;
 }
 
@@ -283,7 +285,7 @@ does the job for now.
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: black;
+    background-color: rgb(36, 40, 55);
     color: #fff;
 }
 .nav-links a {
@@ -420,8 +422,8 @@ input[type=checkbox]{
 
 code {
     background-color: rgb(36, 40, 55);
-    border: 1px solid #DEDEDE;
-    color: white;
+    /* border: 1px solid #DEDEDE; */
+    color: rgb(220, 132, 106);
     font-family: monospace;
     /* font-size: 0.93em; */
     margin: 0px 1px;
@@ -437,7 +439,7 @@ code {
     position: fixed;
     right: 0em;
     top: 0em;
-    background: white;
+    background: rgb(36, 40, 55);
     line-height: 12pt;
     text-align: right;
     box-shadow: 0 0 1em #777777;
