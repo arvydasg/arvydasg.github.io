@@ -1,0 +1,52 @@
+:root {
+    --green: rgb(0, 104, 28);
+    --greenlight: rgb(213, 255, 218);
+    --grey: rgb(238, 238, 238);
+}
+
+nav {
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: var(--green);
+    color: white;
+}
+
+li {
+    float: left;
+    padding: 0px 20px 0px 20px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+ul {
+    padding: 0px;
+}
+
+main {
+    background-color: var(--grey);
+    padding: 20px;
+}
+
+h1 {
+    background-color: var(--green);
+    padding: 10px;
+    color: white;
+}
+
+footer {
+    background-color: var(--greenlight);
+    padding: 20px;
+}
+
+main img {
+    text-align: center;
+    width: 100%;
+}
