@@ -74,7 +74,7 @@
          </div>")
 
         ("static"
-         :base-directory "~/Dropbox/documents/org/images_nejudink"
+         :base-directory "~/Dropbox/documents/org/images_nejudink/website_nejudink"
          :base-extension "jpg\\|gif\\|png\\|pdf\\|xlsx\\|txt"
          :publishing-directory "~/Dropbox/src/arvydasg.github.io/static"
          :publishing-function org-publish-attachment
