@@ -3,13 +3,13 @@
  */
 
 :root {
-    --color-background: white;
-    --color-text: #333333;;
-    --color-secondary: #333;
+    --color-background: rgb(41, 45, 62);
+    --color-text: white;;
+    --color-secondary: white;
     --color-shadow: #eee;
-    --color-link: #0074CC;
+    --color-link: rgb(189, 129, 189);
     /* --color-link: #5599D9; */
-    --color-link-active: #0a95ff;
+    --color-link-active: rgb(199, 146, 233);
     --border-width: 2px;
 }
 
@@ -64,11 +64,11 @@ h1, h2, h3, h4, h5, h6 {
 /* } */
 
 h2 {
-    color: #587e72;
+    color: rgb(130, 170, 245);
     border-bottom: 1px solid #ddd;
     margin-top: 1.5em;
     padding-bottom: 8px;
-    border-bottom: 4px solid #587e72;
+    border-bottom: 4px solid rgb(130, 170, 245);
 }
 
 h2:first-letter{
@@ -80,9 +80,9 @@ h2:first-letter{
 }
 
 h3 {
-    color: #587e72;
+    color: rgb(199, 146, 233);
     margin-left: 25px;
-    border-bottom: 1px solid #587e72;
+    border-bottom: 1px solid rgb(199, 146, 233);
 }
 
 .outline-text-3 {
@@ -94,9 +94,9 @@ h3:first-letter{
 }
 
 h4 {
-    color: #587e72;
+    color: rgb(186, 128, 178);
     margin-left: 50px;
-    border-bottom: 1px solid #587e72;
+    border-bottom: 1px solid rgb(186, 128, 178);
 }
 
 .outline-text-4 {
@@ -134,14 +134,16 @@ h4:first-letter{
 /*     padding-right: 10px; */
 /* } */
 
-a:link, a:visited {
+#content a:link, a:visited {
     color: var(--color-link);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-a:hover, a:active {
+#content a:hover, a:active {
     color: var(--color-link-active);
-    text-decoration: underline;
+    background-color: rgb(199, 146, 233);
+    color: black;
+    font-weight: 600;
 }
 
 li {
@@ -224,9 +226,8 @@ h1 .timestamp, h2 .timestamp, h3 .timestamp, h4 .timestamp, h5 .timestamp, h6 .t
     display: inline;
 }
 
-footer {
+.footer {
     margin: auto;
-    font-size: 80%;
     line-height: 1.5em;
 }
 
@@ -282,7 +283,7 @@ does the job for now.
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #587e72;
+    background-color: black;
     color: #fff;
 }
 .nav-links a {
@@ -296,7 +297,7 @@ does the job for now.
 }
 
 a.logo {
-    color: white;
+    color: rgb(130, 170, 245);
     text-decoration: none;
 }
 /* NAVBAR MENU */
@@ -307,9 +308,9 @@ a.logo {
     list-style-type: none;
 }
 .menu li:hover {
-    background-color: #3e5850;
-    border-radius: 5px;
-    transition: 0.3s ease;
+    text-decoration: underline;
+    color: white;
+    /* transition: 0.3s ease; */
 }
 .menu li {
     padding: 5px 14px;
@@ -418,9 +419,9 @@ input[type=checkbox]{
 /* code with ~tt~ and =tt= */
 
 code {
-    background-color: #F8F8FF;
+    background-color: rgb(36, 40, 55);
     border: 1px solid #DEDEDE;
-    color: #444444;
+    color: white;
     font-family: monospace;
     /* font-size: 0.93em; */
     margin: 0px 1px;
