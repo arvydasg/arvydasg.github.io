@@ -1,0 +1,171 @@
+:root {
+    --color-dark-blue1: rgb(31, 39, 56);
+    --color-dark-blue2: rgb(50, 60, 80);
+    --color-dark-blue3: rgb(45, 52, 71);
+    --color-light-blue: rgb(59, 176, 225);
+    --color-yellow1: rgb(255, 249, 99);
+    --color-yellow2: rgb(255, 206, 65);
+    --color-green: rgb(0, 220, 94);
+    --color-red1: rgb(226, 11, 25);
+    --color-red2: rgb(244, 99, 120);
+    --color-grey: rgb(167, 161, 173);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: var(--color-dark-blue1);
+}
+
+.content_wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    padding: 20px;
+}
+
+header p {
+    padding-top: 20px;
+    color: var(--color-red2);
+}
+
+header img{
+    background: white;
+    border-radius: 30px;
+}
+
+header h1{
+    padding-bottom: 20px;
+    color: var(--color-yellow1);
+}
+
+h1::before {
+    content: "⚽";
+}
+
+span::after {
+    content: "⚽";
+}
+
+header p::first-letter {
+    font-size: 300%;
+    font-style: italic;
+}
+
+
+header span {
+    color: var(--color-light-blue);
+}
+
+header nav {
+  text-align: center;
+  padding: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header nav a+a:before {
+  padding: 8px;
+  color: orange;
+  content: "//\00a0";
+}
+
+nav a:first-child {
+    color: orange;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* TABLE PRASIDEDA */
+
+table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-grey);
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 900;
+    padding: 15px;
+    text-align: left;
+    width: 50px;
+}
+
+th:first-child {
+    width: 20px;
+}
+
+td:nth-child(2) {
+    width: 150px;
+}
+
+td:last-child {
+    width: 250px;
+}
+
+tr:nth-child(even) {
+    background: var(--color-dark-blue2);
+}
+
+tr:nth-child(odd) {
+    background: var(--color-dark-blue3);
+}
+
+tr:first-child {
+    background: var(--color-dark-blue1);
+}
+
+td {
+    padding: 10px;
+    border: 2px solid var(--color-dark-blue1);
+}
+
+td:first-child {
+    color: var(--color-red2);
+}
+
+.win {
+    display: inline-block;
+    background: var(--color-green);
+    padding: 5px;
+    color: white;
+}
+
+.form {
+  display: inline-block;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  width: 20px;
+  text-align: center;
+}
+
+.win {
+  background-color: #14dc4b;
+}
+
+.draw {
+  background-color: #ffcd00;
+}
+
+.loss {
+  background-color: #dc0000;
+}
