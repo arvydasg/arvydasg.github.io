@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1495292040232-745a10cd202c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1Filofax8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2{
+    text-align: center;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 8px 50px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: darkgrey;
+}
+
+.container {
+    width: 600px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.checkboxes {
+    bg
+}
+
+input[type=checkbox] {
+    margin: 5px;
+}

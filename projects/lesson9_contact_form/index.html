@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link href="style.css" rel="stylesheet"/>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/action_page.php">
+                <h2>Contact Us!</h2>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Petras" required minlength="3" maxlength="20">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="petras@petras.lt.." required>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">Lithuania</option>
+                    <option value="australia">Nepal</option>
+                    <option value="canada">Maldives</option>
+                    <option value="usa">Portugal</option>
+                    <option value="usa">Poland</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Your message goes here.." style="height:50px"></textarea>
+                <div class="checkboxes">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label><br>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>                        
+    </body>
+</html>
